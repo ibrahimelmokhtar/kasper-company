@@ -1,0 +1,13 @@
+/* based on Bootstrap Grid System */
+/* *************** xs: extra small devices (phones) ******************* */
+@media only screen and (max-width: 768px) {
+}
+/* ***************** sm: small devices (tablets) ********************** */
+@media only screen and (min-width: 768px) {
+}
+/* ************** md: medium devices (small laptops) ****************** */
+@media only screen and (min-width: 992px) {
+}
+/* ************ lg: large devices (laptops and desktops) ************** */
+@media only screen and (min-width: 1200px) {
+}
