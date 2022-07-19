@@ -1,13 +1,112 @@
 /* based on Bootstrap Grid System */
+/* Root Variables */
+:root {
+    --border-color: #726f71;
+    --background-color: #1f2021;
+    --active-color: #19c8fa;
+    --transition-duration: 0.5s;
+    --space-64: 64px;
+}
 /* *************** xs: extra small devices (phones) ******************* */
 @media only screen and (max-width: 768px) {
+    body {
+        background-color: brown;
+    }
+    /* Menu Icon */
+    header .menu__icon {
+        display: inline-flex;
+    }
+    /* Sections Items */
+    header ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    /* Sections Links */
+    header ul a {
+        margin: 8px var(--space-64);
+        padding: 8px 16px;
+    }
+    /* Menu Icon Hover Effect */
+    .menu__icon:hover + ul,
+    ul:hover {
+        display: flex;
+    }
+    /* Sections Links Hover Effect */
+    header ul a:hover,
+    header ul a.active {
+        border-color: transparent transparent transparent var(--active-color);
+    }
 }
 /* ***************** sm: small devices (tablets) ********************** */
 @media only screen and (min-width: 768px) {
+    body {
+        background-color: bisque;
+    }
+    /* Menu Icon */
+    header .menu__icon {
+        display: inline-flex;
+    }
+    /* Sections Items */
+    header ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    /* Sections Links */
+    header ul a {
+        margin: 8px var(--space-64);
+        padding: 8px 16px;
+    }
+    /* Menu Icon Hover Effect */
+    .menu__icon:hover + ul,
+    ul:hover {
+        display: flex;
+    }
+    /* Sections Links Hover Effect */
+    header ul a:hover,
+    header ul a.active {
+        border-color: transparent transparent transparent var(--active-color);
+    }
 }
 /* ************** md: medium devices (small laptops) ****************** */
 @media only screen and (min-width: 992px) {
+    body {
+        background-color: aqua;
+    }
+    /* Menu Icon */
+    header .menu__icon {
+        display: none;
+    }
+    /* Sections Items */
+    header ul {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+    }
+    /* Sections Links */
+    header ul a {
+        margin: 0 8px;
+        padding: 32px 0;
+    }
+    /* Sections Links Hover Effect */
+    header ul a:hover,
+    header ul a.active {
+        border-color: transparent transparent var(--active-color) transparent;
+    }
 }
 /* ************ lg: large devices (laptops and desktops) ************** */
 @media only screen and (min-width: 1200px) {
+    body {
+        background-color: var(--background-color);
+    }
 }

@@ -4,11 +4,113 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap');
 /* ************************** General Rules *************************** */
+/* Root Variables */
+:root {
+    --border-color: #726f71;
+    --background-color: #1f2021;
+    --active-color: #19c8fa;
+    --transition-duration: 0.5s;
+    --space-64: 64px;
+}
 /* General */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
 }
 html { scroll-behavior: smooth; }
+/* Main Container */
+.container {
+    padding: 0 var(--space-64);
+    position: relative;
+}
+/* ************************** Header *************************** */
+/* Header Container */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Bottom Border For Header */
+header .container::after {
+    content: '';
+    background-color: var(--border-color);
+    width: calc(100% - 2 * var(--space-64));
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: var(--space-64);
+    transform: translate(0, 50%);
+}
+/* Header Navbar */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Menu Icon */
+header .menu__icon {
+    font-size: 15pt;
+    font-weight: 600;
+    margin-right: calc(var(--space-64) / 2);
+    padding: 32px 0;
+    transition: color var(--transition-duration);
+}
+/* Sections Items */
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: var(--space-64);
+    list-style: none;
+    z-index: 1;
+    flex: 1;
+}
+header ul li {
+    width: 100%;
+}
+/* Sections Links */
+header ul a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13pt;
+    font-weight: 600;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid transparent;
+    transition-property: color, border-color;
+    transition-duration: var(--transition-duration);
+}
+/* Sections Links Hover Effect */
+header ul a:hover,
+header ul a.active {
+    color: var(--active-color);
+}
+/* Search Icon */
+#search__icon {
+    position: relative;
+}
+#search__icon i {
+    padding-left: 24px;
+    font-size: 15pt;
+    font-weight: 600;
+    transition: color var(--transition-duration);
+}
+#search__icon i:hover,
+.menu__icon:hover {
+    color: var(--active-color);
+    cursor: pointer;
+}
+/* Side Border For Search Icon */
+#search__icon::before {
+    content: '';
+    background-color: var(--border-color);
+    height: calc(100% + 20px);
+    width: 1px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
