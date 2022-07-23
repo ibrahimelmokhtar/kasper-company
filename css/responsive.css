@@ -3,19 +3,24 @@
 :root {
     --border-color: #726f71;
     --background-color: #1f2021;
-    --active-color: #19c8fa;
+    --main-color: #19c8fa;
+    --transparent-background: #19c8fa66; /* Converted From (rgba) Into (hex) */
+    --overlay-background: #00000099; /* Converted From (rgba) Into (hex) */
     --transition-duration: 0.5s;
+    --space-32: 32px;
     --space-64: 64px;
+    --space-80: 80px;
+    --space-96: 96px;
+    --font-light: 300;
+    --font-regular: 400;
+    --font-semiBold: 600;
+    --font-bold: 700;
 }
 /* *************** xs: extra small devices (phones) ******************* */
 @media only screen and (max-width: 768px) {
-    body {
-        background-color: brown;
-    }
+    /* ********* Heading ********* */
     /* Menu Icon */
-    header .menu__icon {
-        display: inline-flex;
-    }
+    header .menu__icon { display: inline-flex; }
     /* Sections Items */
     header ul {
         display: none;
@@ -25,32 +30,29 @@
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
+        background-color: var(--border-color);
     }
     /* Sections Links */
-    header ul a {
-        margin: 8px var(--space-64);
-        padding: 8px 16px;
-    }
+    header ul a { margin: 8px var(--space-64); padding: 8px 16px; }
     /* Menu Icon Hover Effect */
-    .menu__icon:hover + ul,
-    ul:hover {
-        display: flex;
-    }
+    header .menu__icon:hover + ul,
+    header ul:hover { display: flex; }
     /* Sections Links Hover Effect */
     header ul a:hover,
-    header ul a.active {
-        border-color: transparent transparent transparent var(--active-color);
-    }
+    header ul a.active { border-color: transparent transparent transparent var(--main-color); }
+    /* ********* Landing ********* */
+    /* Main Container */
+    #landing .text__container { width: 100%; padding: var(--space-32) var(--space-80); }
+    /* Main Title */
+    #landing .content h2 { font-size: 14pt; }
+    /* Main Paragraph */
+    #landing .content p { font-size: 12pt; }
 }
 /* ***************** sm: small devices (tablets) ********************** */
 @media only screen and (min-width: 768px) {
-    body {
-        background-color: bisque;
-    }
+    /* ********* Heading ********* */
     /* Menu Icon */
-    header .menu__icon {
-        display: inline-flex;
-    }
+    header .menu__icon { display: inline-flex; }
     /* Sections Items */
     header ul {
         display: none;
@@ -62,51 +64,43 @@
         width: 100%;
     }
     /* Sections Links */
-    header ul a {
-        margin: 8px var(--space-64);
-        padding: 8px 16px;
-    }
+    header ul a { margin: 8px var(--space-64); padding: 8px 16px; }
     /* Menu Icon Hover Effect */
     .menu__icon:hover + ul,
-    ul:hover {
-        display: flex;
-    }
+    header ul:hover { display: flex; }
     /* Sections Links Hover Effect */
     header ul a:hover,
-    header ul a.active {
-        border-color: transparent transparent transparent var(--active-color);
-    }
+    header ul a.active { border-color: transparent transparent transparent var(--main-color); }
+    /* ********* Landing ********* */
+    /* Main Container */
+    #landing .text__container { width: 100%; padding: calc(var(--space-80) / 4) var(--space-96); }
+    /* Main Title */
+    #landing .content h2 { font-size: 24pt; }
 }
 /* ************** md: medium devices (small laptops) ****************** */
 @media only screen and (min-width: 992px) {
-    body {
-        background-color: aqua;
-    }
+    /* ********* Heading ********* */
     /* Menu Icon */
-    header .menu__icon {
-        display: none;
-    }
+    header .menu__icon { display: none; }
     /* Sections Items */
     header ul {
-        display: flex;
         position: relative;
+        display: flex;
         flex-direction: row;
         align-items: center;
     }
     /* Sections Links */
-    header ul a {
-        margin: 0 8px;
-        padding: 32px 0;
-    }
+    header ul a { margin: 0 8px; padding: 32px 0; }
     /* Sections Links Hover Effect */
     header ul a:hover,
-    header ul a.active {
-        border-color: transparent transparent var(--active-color) transparent;
-    }
+    header ul a.active { border-color: transparent transparent var(--main-color) transparent; }
+    /* ********* Landing ********* */
+    /* Main Container */
+    #landing .text__container { width: 60%; padding: calc(var(--space-80) / 4); padding-left: var(--space-80); }
 }
 /* ************ lg: large devices (laptops and desktops) ************** */
 @media only screen and (min-width: 1200px) {
-    body {
-        background-color: var(--background-color);
-    }
+    /* ********* Landing ********* */
+    /* Main Title */
+    #landing .content h2 { font-size: 30pt; }
 }
