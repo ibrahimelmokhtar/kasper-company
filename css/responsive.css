@@ -75,6 +75,9 @@
     /* ********* Video ********* */
     /* Main Text Title */
     #video .text__container h3 { font-size: 18pt; }
+    /* ********* About ********* */
+    /* Main Image */
+    #about img { bottom: -70px; margin-top: -70px; }
 }
 /* ***************** sm: small devices (tablets) ********************** */
 @media only screen and (min-width: 768px) {

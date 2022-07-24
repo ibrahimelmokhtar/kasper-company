@@ -27,7 +27,7 @@ html { scroll-behavior: smooth; }
 /* Main Container */
 .container { padding: 0 var(--space-80); position: relative; }
 /* Section Elements */
-section { padding: var(--space-64) 0; }
+section { padding: var(--space-64) 0; position: relative; }
 section > .container { padding: 0 var(--space-64); }
 /* Overlay Background */
 .overlay {
@@ -185,7 +185,6 @@ header .menu__icon:hover { color: var(--main-color); cursor: pointer; }
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    position: relative;
 }
 /* Main Container */
 #landing .text__container {
@@ -298,7 +297,6 @@ header .menu__icon:hover { color: var(--main-color); cursor: pointer; }
 #services .card__paragraph { color: var(--border-color); font-size: 13pt; font-weight: var(--font-regular); line-height: 1.6; }
 /* ************************** Design *************************** */
 #design {
-    position: relative;
     background-color: var(--background-color);
     background-image: url('../assets/images/design-features.jpg');
     background-position: center;
@@ -451,7 +449,10 @@ header .menu__icon:hover { color: var(--main-color); cursor: pointer; }
 #video {
     padding: 0;
     background-color: var(--background-color);
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 /* Main Video */
 #video video {
@@ -503,4 +504,15 @@ header .menu__icon:hover { color: var(--main-color); cursor: pointer; }
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/* ************************** About *************************** */
+#about { overflow: hidden; padding-bottom: 0; }
+/* Main Image */
+#about img {
+    position: relative;
+    left: 50%;
+    bottom: -120px;
+    transform: translate(-54%, 0);
+    margin-top: -120px;
+    max-width: 100%;
 }
