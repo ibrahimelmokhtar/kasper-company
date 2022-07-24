@@ -52,6 +52,16 @@
     #services .card .content { width: 100%; text-align: center; }
     /* Service Title */
     #services .card__title { padding-top: var(--space-32); padding-bottom: var(--space-16); width: 100%; }
+    /* ********* Design ********* */
+    #design { height: 450px; }
+    /* Main Design Image */
+    #design img { display: none; }
+    /* Text Container */
+    #design .text__container { width: 100%; padding: var(--space-32) var(--space-80); }
+    /* Main Design Title */
+    #design .text__container h3 { font-size: 14pt; }
+    /* Main Design Features List */
+    #design .text__container ul { font-size: 12pt; }
 }
 /* ***************** sm: small devices (tablets) ********************** */
 @media only screen and (min-width: 768px) {
@@ -90,6 +100,16 @@
     #services .card .content { width: 100%; text-align: center; }
     /* Service Title */
     #services .card__title { padding-top: var(--space-32); padding-bottom: var(--space-16); width: 100%; }
+    /* ********* Design ********* */
+    #design { height: 550px; }
+    /* Main Design Image */
+    #design img { display: none; }
+    /* Text Container */
+    #design .text__container { width: 100%; padding: var(--space-32) var(--space-80); }
+    /* Main Design Title */
+    #design .text__container h3 { font-size: 20pt; }
+    /* Main Design Features List */
+    #design .text__container ul { font-size: 16pt; }
 }
 /* ************** md: medium devices (small laptops) ****************** */
 @media only screen and (min-width: 992px) {
@@ -118,10 +138,19 @@
     #services .card .content { width: 75%; text-align: start; }
     /* Service Title */
     #services .card__title { padding-top: 0; }
+    /* ********* Design ********* */
+    #design { height: 600px; }
+    /* Main Design Image */
+    #design img { display: block; }
+    /* Text Container */
+    #design .text__container { width: 55%; padding: calc(var(--space-80) / 4); padding-right: var(--space-80); }
 }
 /* ************ lg: large devices (laptops and desktops) ************** */
 @media only screen and (min-width: 1200px) {
     /* ********* Landing ********* */
     /* Main Title */
     #landing .content h2 { font-size: 30pt; }
+    /* ********* Design ********* */
+    /* Text Container */
+    #design .text__container { width: 60%; }
 }

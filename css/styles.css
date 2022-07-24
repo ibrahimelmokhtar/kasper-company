@@ -27,8 +27,8 @@ html { scroll-behavior: smooth; }
 /* Main Container */
 .container { padding: 0 var(--space-80); position: relative; }
 /* Section Elements */
-section { padding-bottom: var(--space-32); }
-section > .container { padding: var(--space-64); padding-bottom: 0; }
+section { padding: var(--space-64) 0; }
+section > .container { padding: 0 var(--space-64); }
 /* Overlay Background */
 .overlay {
     background-color: var(--overlay-background);
@@ -291,3 +291,55 @@ header .menu__icon:hover { color: var(--main-color); cursor: pointer; }
 #services .card__title { color: var(--main-color); font-size: 20pt; font-weight: var(--font-regular); }
 /* Service Paragraph */
 #services .card__paragraph { color: var(--border-color); font-size: 13pt; font-weight: var(--font-regular); line-height: 1.6; }
+/* ************************** Design *************************** */
+#design {
+    position: relative;
+    background-color: var(--background-color);
+    background-image: url('../assets/images/design-features.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+/* Main Design Image */
+#design img {
+    position: relative;
+    bottom: -200px;
+    z-index: 2;
+}
+/* Text Container */
+#design .text__container {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    background-color: var(--transparent-background);
+    z-index: 2;
+}
+/* Main Design Title */
+#design .text__container h3 {
+    font-size: 20pt;
+    font-weight: var(--font-regular);
+    text-transform: uppercase;
+    padding-bottom: var(--space-32)
+}
+/* Main Design Features List */
+#design .text__container ul {
+    list-style: none;
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 16pt;
+    font-weight: var(--font-regular);
+}
+/* Single Design Feature */
+#design .text__container li { position: relative; padding: var(--space-16) 0 var(--space-16) var(--space-64); }
+/* List Icon */
+#design .text__container li::before {
+    content: '\e163';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: var(--font-semiBold);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
