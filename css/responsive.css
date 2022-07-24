@@ -5,7 +5,7 @@
     --background-color: #1f2021;
     --main-color: #19c8fa;
     --transparent-background: #19c8fa66; /* Converted From (rgba) Into (hex) */
-    --overlay-background: #00000099; /* Converted From (rgba) Into (hex) */
+    --overlay-background: #00000066; /* Converted From (rgba) Into (hex) */
     --transition-duration: 0.5s;
     --space-16: 16px; --space-32: 32px; --space-64: 64px; --space-80: 80px; --space-96: 96px;
     --font-light: 300; --font-regular: 400; --font-semiBold: 600; --font-bold: 700;
@@ -72,6 +72,9 @@
     #portfolio .projects .title { font-size: 16pt; }
     /* Project Type */
     #portfolio .projects .type { font-size: 13pt; }
+    /* ********* Video ********* */
+    /* Main Text Title */
+    #video .text__container h3 { font-size: 18pt; }
 }
 /* ***************** sm: small devices (tablets) ********************** */
 @media only screen and (min-width: 768px) {
