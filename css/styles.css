@@ -10,7 +10,7 @@
     --background-color: #1f2021;
     --main-color: #19c8fa;
     --transparent-background: #19c8fa66; /* Converted From (rgba) Into (hex) */
-    --overlay-background: #00000066; /* Converted From (rgba) Into (hex) */
+    --overlay-background: #00000080; /* Converted From (rgba) Into (hex) */
     --transition-duration: 0.5s;
     --space-16: 16px; --space-32: 32px; --space-64: 64px; --space-80: 80px; --space-96: 96px;
     --font-light: 300; --font-regular: 400; --font-semiBold: 600; --font-bold: 700;
@@ -516,3 +516,49 @@ header .menu__icon:hover { color: var(--main-color); cursor: pointer; }
     margin-top: -120px;
     max-width: 100%;
 }
+/* ************************** Statistics *************************** */
+#statistics {
+    background-color: var(--background-color);
+    background-image: url('../assets/images/stats.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 0;
+}
+/* Statistics List Container */
+#statistics ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--transparent-background);
+    width: 850px;
+    padding: 24px;
+    z-index: 2;
+}
+/* Single Statistics Item */
+#statistics ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+/* Statistics Icon */
+#statistics ul .stats__icon {
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    background-color: var(--background-color);
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14pt;
+}
+/* Statistics Number */
+#statistics ul .stats__number { font-size: 50pt; font-weight: var(--font-bold); }
+/* Statistics Description */
+#statistics ul .stats__description { font-size: 13pt; font-weight: var(--font-light); }

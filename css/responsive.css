@@ -5,7 +5,7 @@
     --background-color: #1f2021;
     --main-color: #19c8fa;
     --transparent-background: #19c8fa66; /* Converted From (rgba) Into (hex) */
-    --overlay-background: #00000066; /* Converted From (rgba) Into (hex) */
+    --overlay-background: #00000080; /* Converted From (rgba) Into (hex) */
     --transition-duration: 0.5s;
     --space-16: 16px; --space-32: 32px; --space-64: 64px; --space-80: 80px; --space-96: 96px;
     --font-light: 300; --font-regular: 400; --font-semiBold: 600; --font-bold: 700;
@@ -78,6 +78,9 @@
     /* ********* About ********* */
     /* Main Image */
     #about img { bottom: -70px; margin-top: -70px; }
+    /* ********* Statistics ********* */
+    /* Single Statistics Item */
+    #statistics ul li { flex-basis: 100%; margin: 24px 0; }
 }
 /* ***************** sm: small devices (tablets) ********************** */
 @media only screen and (min-width: 768px) {
@@ -132,6 +135,9 @@
         grid-template-columns: repeat(3, minmax(250px, 1fr));
         grid-template-rows: repeat(3, minmax(250px, 1fr));
     }
+    /* ********* Statistics ********* */
+    /* Single Statistics Item */
+    #statistics ul li { flex-basis: 50%; margin: 24px 0; }
 }
 /* ************** md: medium devices (small laptops) ****************** */
 @media only screen and (min-width: 992px) {
@@ -172,6 +178,9 @@
         grid-template-columns: repeat(4, minmax(250px, 1fr));
         grid-template-rows: repeat(2, minmax(250px, 1fr));
     }
+    /* ********* Statistics ********* */
+    /* Single Statistics Item */
+    #statistics ul li { flex-basis: 25%; }
 }
 /* ************ lg: large devices (laptops and desktops) ************** */
 @media only screen and (min-width: 1200px) {
