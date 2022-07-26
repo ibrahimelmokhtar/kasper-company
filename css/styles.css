@@ -84,10 +84,9 @@ section > .container { padding: 0 var(--space-64); }
     margin: 0 auto var(--space-64);
 }
 /* Active Buttons */
-button:active {
-    transition: transform var(--transition-duration);
-    transform: scale(0.9);
-}
+button:active { transition: transform var(--transition-duration); transform: scale(0.9); }
+/* List Style */
+ul { list-style: none; }
 /* ************************** Header *************************** */
 /* Page Header */
 header {
@@ -136,7 +135,6 @@ header ul {
     justify-content: space-between;
     align-items: center;
     margin-right: var(--space-64);
-    list-style: none;
     flex: 1;
     z-index: 3;
 }
@@ -238,7 +236,6 @@ header .menu__icon:hover { color: var(--main-color); cursor: pointer; }
 #landing .right__arrow:hover { cursor: pointer; color: var(--main-color); }
 /* Dotted Indicator Container */
 #landing ul {
-    list-style: none;
     position: absolute;
     bottom: 30px;
     left: 50%;
@@ -328,7 +325,6 @@ header .menu__icon:hover { color: var(--main-color); cursor: pointer; }
 }
 /* Main Design Features List */
 #design .text__container ul {
-    list-style: none;
     width: 100%;
     text-transform: capitalize;
     font-size: 16pt;
@@ -530,7 +526,6 @@ header .menu__icon:hover { color: var(--main-color); cursor: pointer; }
 }
 /* Statistics List Container */
 #statistics ul {
-    list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -562,3 +557,140 @@ header .menu__icon:hover { color: var(--main-color); cursor: pointer; }
 #statistics ul .stats__number { font-size: 50pt; font-weight: var(--font-bold); }
 /* Statistics Description */
 #statistics ul .stats__description { font-size: 13pt; font-weight: var(--font-light); }
+/* ************************** Skills *************************** */
+#skills * { color: var(--background-color); }
+#skills .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+/* Main Container For Testimonials And Skills */
+#skills .container article { flex-basis: 45%; position: relative; }
+/* Main Title */
+#skills .title {
+    text-transform: uppercase;
+    font-size: 20pt;
+    font-weight: var(--font-regular);
+    text-align: center;
+}
+/* Main Paragraph */
+#skills .paragraph {
+    font-size: 13pt;
+    font-weight: var(--font-light);
+    color: var(--border-color);
+    text-align: center;
+    padding: 32px 0;
+}
+/* ************************** Skills: Testimonials *************************** */
+/* Single Testimonial Container */
+#testimonials ul.quotes__container li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+/* Person Avatar */
+#testimonials img { width: 100px; height: 100px; border-radius: 50%; }
+/* Testimonial Text Container */
+#testimonials .text__container {
+    margin-left: 64px;
+    border-bottom: 1px solid var(--border-color);
+    height: 100%;
+}
+/* Testimonial Quote */
+#testimonials .quote {
+    font-size: 13pt;
+    font-weight: var(--font-light);
+    line-height: 1.6;
+}
+/* Person Job Title */
+#testimonials .job__title {
+    text-align: right;
+    font-size: 13pt;
+    font-weight: var(--font-light);
+    font-style: italic;
+    color: #a8a8a8;
+    line-height: 3;
+}
+/* Dotted Indicator Container */
+#testimonials ul.indicators {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+    z-index: 2;
+}
+/* Single Dot Indicator */
+#testimonials ul.indicators li {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid var(--background-color);
+    transition-property: border-color, background-color;
+    transition-duration: var(--transition-duration);
+    cursor: pointer;
+}
+/* Dotted Indicator Hover Effect */
+#testimonials ul.indicators li.active,
+#testimonials ul.indicators li:hover { background-color: var(--main-color); border-color: var(--main-color); }
+/* ************************** Skills: Our Skills *************************** */
+/* Skills List Container */
+#our__skills ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+/* Single Skill Container */
+#our__skills li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+#our__skills li:not(:last-child) { margin-bottom: 32px; }
+/* Single Skill Title */
+#our__skills .skill__title { font-size: 13pt; font-weight: var(--font-regular); text-transform: uppercase; line-height: 2; }
+/* Progress Bar Container */
+#our__skills .progress__container {
+    background-color: #dbdbdb;
+    width: 100%;
+    height: 25px;
+    position: relative;
+}
+/* Actual Progress */
+#our__skills .progress__bar {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+    height: 100%;
+    width: 100%;
+}
+/* Progress Percentage Container */
+#our__skills .progress__bar::before {
+    content: attr(data-progress);
+    background-color: var(--background-color);
+    color: #ffffff;
+    position: absolute;
+    top: calc(-100% - 10px);
+    right: 0;
+    transform: translate(50%, 0);
+    padding: 4px 8px;
+}
+/* Progress Percentage Bottom Arrow */
+#our__skills .progress__bar::after {
+    content: '';
+    border: 10px solid transparent;
+    border-top-color: var(--background-color);
+    position: absolute;
+    top: -10px;
+    right: 0;
+    transform: translate(50%, 0);
+}

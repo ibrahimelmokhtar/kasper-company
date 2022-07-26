@@ -81,6 +81,16 @@
     /* ********* Statistics ********* */
     /* Single Statistics Item */
     #statistics ul li { flex-basis: 100%; margin: 24px 0; }
+    /* ********* Skills ********* */
+    /* Main Container For Testimonials And Skills */
+    #skills .container article { flex-basis: 100%; }
+    /* ********* Skills: Testimonials ********* */
+    /* Main Testimonials Container */
+    #testimonials { margin-bottom: 64px; }
+    /* Single Testimonial Container */
+    #testimonials ul.quotes__container li { flex-direction: column; }
+    /* Testimonial Text Container */
+    #testimonials .text__container { margin-left: 0; margin-top: 16px; text-align: center; }
 }
 /* ***************** sm: small devices (tablets) ********************** */
 @media only screen and (min-width: 768px) {
@@ -138,6 +148,16 @@
     /* ********* Statistics ********* */
     /* Single Statistics Item */
     #statistics ul li { flex-basis: 50%; margin: 24px 0; }
+    /* ********* Skills ********* */
+    /* Main Container For Testimonials And Skills */
+    #skills .container article { flex-basis: 100%; }
+    /* ********* Skills: Testimonials ********* */
+    /* Main Testimonials Container */
+    #testimonials { margin-bottom: 64px; }
+    /* Single Testimonial Container */
+    #testimonials ul.quotes__container li { flex-direction: row; }
+    /* Testimonial Text Container */
+    #testimonials .text__container { margin-left: 64px; margin-top: 0; text-align: start; }
 }
 /* ************** md: medium devices (small laptops) ****************** */
 @media only screen and (min-width: 992px) {
@@ -181,6 +201,16 @@
     /* ********* Statistics ********* */
     /* Single Statistics Item */
     #statistics ul li { flex-basis: 25%; }
+    /* ********* Skills ********* */
+    /* Main Container For Testimonials And Skills */
+    #skills .container article { flex-basis: 45%; }
+    /* ********* Skills: Testimonials ********* */
+    /* Main Testimonials Container */
+    #testimonials { margin-bottom: 0; }
+    /* Single Testimonial Container */
+    #testimonials ul.quotes__container li { flex-direction: column; }
+    /* Testimonial Text Container */
+    #testimonials .text__container { margin-left: 0; margin-top: 16px; text-align: center; }
 }
 /* ************ lg: large devices (laptops and desktops) ************** */
 @media only screen and (min-width: 1200px) {
@@ -190,4 +220,14 @@
     /* ********* Design ********* */
     /* Text Container */
     #design .text__container { width: 60%; }
+    /* ********* Skills ********* */
+    /* Main Container For Testimonials And Skills */
+    #skills .container article { flex-basis: 45%; }
+    /* ********* Skills: Testimonials ********* */
+    /* Main Testimonials Container */
+    #testimonials { margin-bottom: 0; }
+    /* Single Testimonial Container */
+    #testimonials ul.quotes__container li { flex-direction: row; }
+    /* Testimonial Text Container */
+    #testimonials .text__container { margin-left: 64px; margin-top: 0; text-align: start; }
 }
