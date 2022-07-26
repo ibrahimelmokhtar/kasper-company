@@ -694,3 +694,47 @@ header .menu__icon:hover { color: var(--main-color); cursor: pointer; }
     right: 0;
     transform: translate(50%, 0);
 }
+/* ************************** Quote *************************** */
+#quote {
+    background-color: var(--background-color);
+    background-image: url('../assets/images/quote.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 300px; */
+    /* padding: ; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* Main Text Container */
+#quote .container { position: relative; z-index: 2; }
+/* Main Quote */
+#quote .paragraph {
+    position: relative;
+    font-size: 25pt;
+    font-weight: var(--font-semiBold);
+    text-transform: uppercase;
+    line-height: 1.6;
+}
+/* Quote Icons */
+#quote .paragraph::before,
+#quote .paragraph::after {
+    font-family: 'Font Awesome 6 Free';
+    font-size: 12pt;
+    padding: 0 8px;
+    position: relative;
+    top: -16px;
+}
+/* Left Quote Icon */
+#quote .paragraph::before { content: '\f10d'; }
+/* Right Quote Icon */
+#quote .paragraph::after { content: '\f10e'; }
+/* Main Name */
+#quote .name {
+    font-size: 13pt;
+    font-weight: var(--font-semiBold);
+    margin-top: 32px;
+}

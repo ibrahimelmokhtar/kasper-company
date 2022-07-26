@@ -91,6 +91,14 @@
     #testimonials ul.quotes__container li { flex-direction: column; }
     /* Testimonial Text Container */
     #testimonials .text__container { margin-left: 0; margin-top: 16px; text-align: center; }
+    /* ********* Quote ********* */
+    /* Main Quote */
+    #quote .paragraph { font-size: 14pt; }
+    /* Quote Icons */
+    #quote .paragraph::before,
+    #quote .paragraph::after { top: -10px; }
+    /* Main Name */
+    #quote .name { font-size: 12pt; }
 }
 /* ***************** sm: small devices (tablets) ********************** */
 @media only screen and (min-width: 768px) {
