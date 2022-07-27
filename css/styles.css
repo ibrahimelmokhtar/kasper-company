@@ -965,7 +965,7 @@ header .menu__icon:hover { color: var(--main-color); cursor: pointer; }
 #contact .text__container:not(:last-child) { padding-bottom: 96px; padding-right: 32px; }
 /* Contact Info Main Title */
 #contact .text__container .title {
-    font-size: 14pt;
+    font-size: 13pt;
     font-weight: var(--font-regular);
     text-transform: uppercase;
     margin-bottom: 16px;
@@ -977,3 +977,45 @@ header .menu__icon:hover { color: var(--main-color); cursor: pointer; }
     line-height: 1.6;
     color: var(--border-color);
 }
+/* ************************** Footer *************************** */
+footer {
+    background-color: var(--background-color);
+    background-image: url('../assets/images/subscribe.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 32px 0;
+    position: relative;
+}
+/* Main Container */
+footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+/* Main Title */
+footer .container h4 {
+    font-size: 20pt;
+    font-weight: var(--font-regular);
+    text-transform: uppercase;
+    padding: 16px 32px;
+    margin: 16px 0;
+    border-bottom: 2px solid #ffffff;
+}
+/* Social Media Accounts Container */
+footer .container ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 140px;
+}
+/* Social Media Icons */
+footer li a * { font-size: 20pt; transition: color var(--transition-duration); }
+footer li a:hover * { color: var(--main-color); }
+/* Copyrights Quote */
+footer p { margin-top: 64px; font-size: 15pt; font-weight: var(--font-semiBold); text-transform: capitalize; }
+/* Company Name */
+footer p span { color: var(--main-color); }
