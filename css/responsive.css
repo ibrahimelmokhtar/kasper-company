@@ -99,6 +99,10 @@
     #quote .paragraph::after { top: -10px; }
     /* Main Name */
     #quote .name { font-size: 12pt; }
+    /* ********* Pricing ********* */
+    /* Single Plan Container */
+    #pricing .plans > li { flex-basis: 100%; }
+    #pricing .plans > li:not(:last-child) { margin-bottom: 64px; }
 }
 /* ***************** sm: small devices (tablets) ********************** */
 @media only screen and (min-width: 768px) {
@@ -166,6 +170,11 @@
     #testimonials ul.quotes__container li { flex-direction: row; }
     /* Testimonial Text Container */
     #testimonials .text__container { margin-left: 64px; margin-top: 0; text-align: start; }
+    /* ********* Pricing ********* */
+    /* Single Plan Container */
+    #pricing .plans > li { flex-basis: 45%; }
+    #pricing .plans > li:nth-child(1),
+    #pricing .plans > li:nth-child(2) { margin-bottom: 64px; }
 }
 /* ************** md: medium devices (small laptops) ****************** */
 @media only screen and (min-width: 992px) {
@@ -238,4 +247,9 @@
     #testimonials ul.quotes__container li { flex-direction: row; }
     /* Testimonial Text Container */
     #testimonials .text__container { margin-left: 64px; margin-top: 0; text-align: start; }
+    /* ********* Pricing ********* */
+    /* Single Plan Container */
+    #pricing .plans > li { flex-basis: 20%; }
+    #pricing .plans > li:nth-child(1),
+    #pricing .plans > li:nth-child(2) { margin-bottom: 0; }
 }

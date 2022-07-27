@@ -738,3 +738,120 @@ header .menu__icon:hover { color: var(--main-color); cursor: pointer; }
     font-weight: var(--font-semiBold);
     margin-top: 32px;
 }
+/* ************************** Pricing *************************** */
+#pricing * { color: var(--background-color); }
+/* Plans Container */
+#pricing .plans {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* Single Plan Container */
+#pricing .plans > li {
+    border-top: 2px solid var(--main-color);
+    flex-basis: 20%;
+    padding: 32px 0;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+/* Plan Title */
+#pricing .plans .title {
+    font-size: 16pt;
+    font-weight: var(--font-regular);
+    text-transform: uppercase;
+    line-height: 2;
+}
+/* Main Price */
+#pricing .plans .price {
+    font-size: 60pt;
+    font-weight: var(--font-semiBold);
+    position: relative;
+}
+/* Dollar Sign */
+#pricing .plans .price::before {
+    content: '$';
+    font-size: 20pt;
+    font-weight: var(--font-semiBold);
+    position: relative;
+    top: -40px;
+    left: -16px;
+}
+/* Per Month Caption */
+#pricing .plans .price::after {
+    content: '/mo';
+    font-size: 13pt;
+    font-weight: var(--font-semiBold);
+    text-transform: uppercase;
+    position: relative;
+    right: -10px;
+}
+/* Plan Features Container */
+#pricing .plans .features {
+    font-size: 16pt;
+    font-weight: var(--font-regular);
+    border-top: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    padding: 16px 0;
+    margin: 32px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Single Plan Feature */
+#pricing .plans .features li { padding: 16px 0; width: 60%; }
+#pricing .plans .features li:not(:last-child) { border-bottom: 2px solid var(--main-color); }
+/* Plan Button */
+#pricing .plans button {
+    border: 2px solid var(--main-color);
+    background-color: #ffffff;
+    width: 120px;
+    height: 40px;
+    transition-property: border-color, background-color;
+    transition-duration: var(--transition-duration);
+}
+#pricing .plans button:hover { border-color: var(--background-color); background-color: var(--main-color); }
+#pricing .plans button a {
+    font-size: 16pt;
+    font-weight: var(--font-regular);
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color var(--transition-duration);
+}
+#pricing .plans button:hover a { color: #ffffff; }
+/* Bottom Paragraph */
+#pricing .paragraph {
+    font-size: 20pt;
+    font-weight: var(--font-regular);
+    text-align: center;
+    margin: 64px 0 32px;
+}
+/* Contact Us Button */
+#pricing .container > button {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: var(--main-color);
+    border: none;
+    width: 170px;
+    height: 50px;
+}
+#pricing .container > button a {
+    font-size: 16pt;
+    font-weight: var(--font-regular);
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
