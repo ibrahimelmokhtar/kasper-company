@@ -21,6 +21,7 @@
     /* Sections Items */
     header ul {
         display: none;
+        background-color: var(--overlay-background);
         position: absolute;
         top: 100%;
         left: 0;
@@ -103,6 +104,11 @@
     /* Single Plan Container */
     #pricing .plans > li { flex-basis: 100%; }
     #pricing .plans > li:not(:last-child) { margin-bottom: 64px; }
+    /* ********* Subscribe ********* */
+    /* Form Input Container */
+    #subscribe .input__container { flex-basis: 100%; }
+    /* Main Paragraph */
+    #subscribe p {margin-top: 32px; flex-basis: 100%; text-align: center; }
 }
 /* ***************** sm: small devices (tablets) ********************** */
 @media only screen and (min-width: 768px) {
@@ -175,6 +181,11 @@
     #pricing .plans > li { flex-basis: 45%; }
     #pricing .plans > li:nth-child(1),
     #pricing .plans > li:nth-child(2) { margin-bottom: 64px; }
+    /* ********* Subscribe ********* */
+    /* Form Input Container */
+    #subscribe .input__container { flex-basis: 100%; }
+    /* Main Paragraph */
+    #subscribe p {margin-top: 32px; flex-basis: 100%; text-align: center; }
 }
 /* ************** md: medium devices (small laptops) ****************** */
 @media only screen and (min-width: 992px) {
@@ -228,6 +239,13 @@
     #testimonials ul.quotes__container li { flex-direction: column; }
     /* Testimonial Text Container */
     #testimonials .text__container { margin-left: 0; margin-top: 16px; text-align: center; }
+    /* ********* Subscribe ********* */
+    /* Main Container */
+    #subscribe .container { justify-content: space-between; }
+    /* Form Input Container */
+    #subscribe .input__container { flex-basis: 50%; }
+    /* Main Paragraph */
+    #subscribe p {margin-top: 0; flex-basis: 45%; text-align: start; }
 }
 /* ************ lg: large devices (laptops and desktops) ************** */
 @media only screen and (min-width: 1200px) {

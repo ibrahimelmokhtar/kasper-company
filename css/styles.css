@@ -855,3 +855,56 @@ header .menu__icon:hover { color: var(--main-color); cursor: pointer; }
     width: 100%;
     height: 100%;
 }
+/* ************************** Subscribe *************************** */
+#subscribe {
+    background-color: var(--background-color);
+    background-image: url('../assets/images/subscribe.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Main Container */
+#subscribe .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+}
+/* Form Input Container */
+#subscribe .input__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis: 45%;
+}
+/* Email Input Icon */
+#subscribe .input__container .email__icon { font-size: 16pt; position: relative; left: 10px; z-index: 2; }
+/* Email Input Field */
+#subscribe .input__container #email {
+    position: relative;
+    background-color: var(--background-color);
+    height: 40px;
+    padding: 8px 8px 8px 40px;
+    margin-left: -16pt;    /* To remove the icon reserved space */
+    flex: 1;
+    border: 1px solid #ffffff;
+    border-right: none;
+    caret-color: var(--main-color);
+}
+#subscribe .input__container #email:focus { outline: none; border-color: var(--main-color); }
+/* Submit Form Button */
+#subscribe .input__container #submit {
+    font-size: 13pt;
+    font-weight: var(--font-regular);
+    text-transform: uppercase;
+    background-color: var(--main-color);
+    border: 1px solid #ffffff;
+    border-left: none;
+    padding: 8px 16px;
+    height: 40px;
+    cursor: pointer;
+}
+/* Main Paragraph */
+#subscribe p { font-size: 13pt; font-weight: var(--font-regular); line-height: 1.6; flex-basis: 50%; }
