@@ -908,3 +908,72 @@ header .menu__icon:hover { color: var(--main-color); cursor: pointer; }
 }
 /* Main Paragraph */
 #subscribe p { font-size: 13pt; font-weight: var(--font-regular); line-height: 1.6; flex-basis: 50%; }
+/* ************************** Contact *************************** */
+#contact * { color: var(--background-color); }
+/* Main Content Container */
+#contact .main__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+/* Contact Form */
+#contact form {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+/* Main Form Input Container */
+#contact .input__container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+#contact .input__container *:focus { outline: none; border: 1px solid var(--main-color); caret-color: var(--main-color); }
+/* Spacing Between Form Input Fields */
+#contact .input__container:nth-child(2) { margin: 32px 0; }
+#contact .input__container:last-child { margin-top: 48px; }
+/* Form Input Field Icon */
+#contact .input__container .input__icon {
+    position: absolute;
+    left: 12px;
+    font-size: 14pt;
+}
+#contact .input__container *:focus + .input__icon { color: var(--main-color); }
+/* Form Input Fields: Full Name */
+#name { width: 100%; height: 60px; padding: 0 24px 0 40px; border: 1px solid var(--border-color); }
+/* Form Input Fields: Email */
+#form__email { width: 100%; height: 60px; padding: 0 24px 0 40px; border: 1px solid var(--border-color); }
+/* Form Input Fields: Message */
+#message { width: 100%; height: 200px; padding: 24px; padding-left: 40px; border: 1px solid var(--border-color); }
+#message + .input__icon { top: 24px; }
+/* From Input Fields: Submit Button */
+#form__submit {
+    height: 60px;
+    padding: 0 24px;
+    background-color: var(--main-color);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+/* Side Contact Info */
+#contact .contact__info { flex-basis: 35%; display: flex; flex-direction: column; justify-content: space-evenly; align-items: flex-start; }
+#contact .text__container:not(:last-child) { padding-bottom: 96px; padding-right: 32px; }
+/* Contact Info Main Title */
+#contact .text__container .title {
+    font-size: 14pt;
+    font-weight: var(--font-regular);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+/* Contact Info Main Text */
+#contact .text__container div {
+    font-size: 13pt;
+    font-weight: var(--font-regular);
+    line-height: 1.6;
+    color: var(--border-color);
+}

@@ -5,7 +5,7 @@
     --background-color: #1f2021;
     --main-color: #19c8fa;
     --transparent-background: #19c8fa66; /* Converted From (rgba) Into (hex) */
-    --overlay-background: #00000080; /* Converted From (rgba) Into (hex) */
+    --overlay-background: #000000cc; /* Converted From (rgba) Into (hex) */
     --transition-duration: 0.5s;
     --space-16: 16px; --space-32: 32px; --space-64: 64px; --space-80: 80px; --space-96: 96px;
     --font-light: 300; --font-regular: 400; --font-semiBold: 600; --font-bold: 700;
@@ -109,6 +109,16 @@
     #subscribe .input__container { flex-basis: 100%; }
     /* Main Paragraph */
     #subscribe p {margin-top: 32px; flex-basis: 100%; text-align: center; }
+    /* ********* Contact ********* */
+    /* Contact Form */
+    #contact form { flex-basis: 100%; }
+    /* Main Form Input Container */
+    #contact .input__container { justify-content: center; }
+    /* Side Contact Info */
+    #contact .contact__info { flex-basis: 100%; flex-direction: row; order: -1; margin-bottom: 64px; }
+    #contact .text__container:not(:last-child) { padding-bottom: 0; }
+    /* Contact Info Main Text */
+    #contact .text__container div { font-size: 11pt; }
 }
 /* ***************** sm: small devices (tablets) ********************** */
 @media only screen and (min-width: 768px) {
