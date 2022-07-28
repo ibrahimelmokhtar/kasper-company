@@ -2,7 +2,6 @@
 /* Root Variables */
 :root {
     --main-color: #19c8fa;
-    --space-16: 16px; --space-32: 32px; --space-64: 64px; --space-80: 80px; --space-96: 96px;
     --font-light: 300; --font-regular: 400; --font-semiBold: 600; --font-bold: 700;
 }
 /* *************** xs: extra small devices (phones) ******************* */
@@ -23,18 +22,19 @@
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
+        margin-right: 0;
     }
     /* Sections Links */
-    header ul a { margin: 8px var(--space-64); padding: 8px 16px; }
+    header ul a { margin: 8px 64px; padding: 8px 16px; }
     /* Menu Icon Hover Effect */
     header .menu__icon:hover + ul,
     header ul:hover { display: flex; }
     /* Sections Links Hover Effect */
     header ul a:hover,
-    header ul a.active { border-color: transparent transparent transparent var(--main-color); }
+    header ul a.active { border-color: transparent; border-left-color: var(--main-color); }
     /* ********* Landing ********* */
     /* Main Container */
-    #landing .text__container { width: 100%; padding: var(--space-32) var(--space-80); }
+    #landing .text__container { width: 100%; padding: 32px 80px; }
     /* Main Title */
     #landing .content h2 { font-size: 14pt; }
     /* Main Paragraph */
@@ -47,13 +47,13 @@
     /* Single Service Card Text Container */
     #services .card .content { width: 100%; text-align: center; }
     /* Service Title */
-    #services .card__title { padding-top: var(--space-32); padding-bottom: var(--space-16); width: 100%; }
+    #services .card__title { padding-top: 32px; padding-bottom: 16px; width: 100%; }
     /* ********* Design ********* */
     #design { height: 450px; }
     /* Main Design Image */
     #design img { display: none; }
     /* Text Container */
-    #design .text__container { width: 100%; padding: var(--space-32) var(--space-80); }
+    #design .text__container { width: 100%; padding: 32px 80px; }
     /* Main Design Title */
     #design .text__container h3 { font-size: 14pt; }
     /* Main Design Features List */
@@ -62,7 +62,7 @@
     /* Projects List */
     #portfolio .projects {
         grid-template-columns: repeat(2, minmax(200px, 1fr));
-        grid-template-rows: repeat(4, minmax(250px, 1fr));
+        grid-template-rows: repeat(4, minmax(200px, 1fr));
     }
     /* Project Title */
     #portfolio .projects .title { font-size: 16pt; }
@@ -126,24 +126,26 @@
     /* Sections Items */
     header ul {
         display: none;
+        background-color: #000000cc;
         position: absolute;
         top: 100%;
         left: 0;
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
+        margin-right: 0;
     }
     /* Sections Links */
-    header ul a { margin: 8px var(--space-64); padding: 8px 16px; }
+    header ul a { margin: 8px 64px; padding: 8px 16px; }
     /* Menu Icon Hover Effect */
     .menu__icon:hover + ul,
     header ul:hover { display: flex; }
     /* Sections Links Hover Effect */
     header ul a:hover,
-    header ul a.active { border-color: transparent transparent transparent var(--main-color); }
+    header ul a.active { border-color: transparent; border-left-color: var(--main-color); }
     /* ********* Landing ********* */
     /* Main Container */
-    #landing .text__container { width: 100%; padding: calc(var(--space-80) / 4) var(--space-96); }
+    #landing .text__container { width: 100%; padding: 20px 96px; }
     /* Main Title */
     #landing .content h2 { font-size: 24pt; }
     /* ********* Services ********* */
@@ -154,13 +156,13 @@
     /* Single Service Card Text Container */
     #services .card .content { width: 100%; text-align: center; }
     /* Service Title */
-    #services .card__title { padding-top: var(--space-32); padding-bottom: var(--space-16); width: 100%; }
+    #services .card__title { padding-top: 32px; padding-bottom: 16px; width: 100%; }
     /* ********* Design ********* */
     #design { height: 550px; }
     /* Main Design Image */
     #design img { display: none; }
     /* Text Container */
-    #design .text__container { width: 100%; padding: var(--space-32) var(--space-80); }
+    #design .text__container { width: 100%; padding: 32px 80px; }
     /* Main Design Title */
     #design .text__container h3 { font-size: 20pt; }
     /* Main Design Features List */
@@ -169,7 +171,7 @@
     /* Projects List */
     #portfolio .projects {
         grid-template-columns: repeat(3, minmax(250px, 1fr));
-        grid-template-rows: repeat(3, minmax(250px, 1fr));
+        grid-template-rows: repeat(3, minmax(200px, 1fr));
     }
     /* ********* Statistics ********* */
     /* Single Statistics Item */
@@ -203,18 +205,20 @@
     /* Sections Items */
     header ul {
         position: relative;
+        background-color: transparent;
         display: flex;
         flex-direction: row;
         align-items: center;
+        margin-right: 64px;
     }
     /* Sections Links */
-    header ul a { margin: 0 8px; padding: 32px 0; }
+    header ul a { margin: 0 8px; padding: 32px 8px; }
     /* Sections Links Hover Effect */
     header ul a:hover,
-    header ul a.active { border-color: transparent transparent var(--main-color) transparent; }
+    header ul a.active { border-color: transparent; border-bottom-color: var(--main-color); }
     /* ********* Landing ********* */
     /* Main Container */
-    #landing .text__container { width: 60%; padding: calc(var(--space-80) / 4); padding-left: var(--space-80); }
+    #landing .text__container { width: 60%; padding: 20px; padding-left: 80px; }
     /* ********* Services ********* */
     /* Single Service Card */
     #services .card { flex-direction: row; align-items: flex-start; }
@@ -227,12 +231,12 @@
     /* Main Design Image */
     #design img { display: block; }
     /* Text Container */
-    #design .text__container { width: 55%; padding: calc(var(--space-80) / 2); padding-right: var(--space-80); }
+    #design .text__container { width: 55%; padding: 40px; padding-right: 80px; }
     /* ********* Portfolio ********* */
     /* Projects List */
     #portfolio .projects {
         grid-template-columns: repeat(4, minmax(250px, 1fr));
-        grid-template-rows: repeat(2, minmax(250px, 1fr));
+        grid-template-rows: repeat(2, minmax(200px, 1fr));
     }
     /* ********* Statistics ********* */
     /* Single Statistics Item */

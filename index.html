@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="no-Store">
     <meta name="description" content="Convert a PSD mockup design into a responsive website">
     <meta name="keywords" content="HTML5, CSS3, Company Website, Mockup Design to HTML">
     <meta name="author" content="Ibrahim El-Mokhtar">
@@ -11,18 +12,63 @@
     <title>Kasper Company</title>
     <link rel="icon" href="assets/icons/logo.webp" type="image/webp">
     <!-- FontAwesome Library - v6.1.1 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="preload" media="all" href="plugins/fontawesome-6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="plugins/fontawesome-6.1.1/css/all.min.css"></noscript>
+    <!-- Used Fonts -->
+        <!-- Preload Fonts -->
+    <link rel="preload" href="assets/fonts/OpenSans-Light.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="assets/fonts/OpenSans-Regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="assets/fonts/OpenSans-SemiBold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="assets/fonts/OpenSans-Bold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="assets/fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <style>
+        /* Open Sans - Light */
+        @font-face {
+            font-family: 'Work Sans';
+            src: url('assets/fonts/OpenSans-Light.woff2') format('woff2'), url('assets/fonts/OpenSans-Light.woff') format('woff');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+        /* Open Sans - Regular */
+        @font-face {
+            font-family: 'Work Sans';
+            src: url('assets/fonts/OpenSans-Regular.woff2') format('woff2'), url('assets/fonts/OpenSans-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+        /* Open Sans - Semi Bold */
+        @font-face {
+            font-family: 'Work Sans';
+            src: url('assets/fonts/OpenSans-SemiBold.woff2') format('woff2'), url('assets/fonts/OpenSans-SemiBold.woff') format('woff');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+        /* Open Sans - Bold */
+        @font-face {
+            font-family: 'Work Sans';
+            src: url('assets/fonts/OpenSans-Bold.woff2') format('woff2'), url('assets/fonts/OpenSans-Bold.woff') format('woff');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
     <!-- Used stylesheets -->
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link media="all" rel="stylesheet" href="css/normalize.min.css">
+    <link media="all" rel="stylesheet" href="css/styles.css">
+    <link media="all" rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="container">
             <!-- Main Company Logo -->
-            <img src="assets/images/logo.png" alt="Company Logo">
+            <img src="assets/images/logo.webp" alt="Company Logo" type="image/webp" loading="lazy" width="112px" height="36px">
             <nav>
                 <!-- Menu Icon -->
                 <i class="fa-solid fa-bars menu__icon"></i>
@@ -118,7 +164,7 @@
         <!-- Background Image Overlay -->
         <div class="overlay"></div>
         <!-- Main Image -->
-        <img src="assets/images/mobile.png" alt="Mobile Image">
+        <img src="assets/images/mobile.webp" alt="Mobile Image" type="image/webp" loading="lazy" width="338px" height="462px">
         <div class="text__container">
             <!-- Main Title -->
             <h3>Our designs comes with ...</h3>
@@ -152,7 +198,7 @@
         <!-- Projects List -->
         <ul class="projects">
             <li>
-                <img src="assets/images/shuffle-01.jpg" alt="Project Preview" class="project__preview">
+                <img src="assets/images/shuffle-01.webp" alt="Project Preview" class="project__preview" type="image/webp" loading="lazy" width="316px" height="210px">
                 <!-- Project Description Container -->
                 <div class="text__container">
                     <!-- Project Title -->
@@ -161,50 +207,50 @@
                     <p class="type">App</p>
                 </div>
             </li>
-            <li class="active">
-                <img src="assets/images/shuffle-02.jpg" alt="Project Preview" class="project__preview">
+            <li>
+                <img src="assets/images/shuffle-02.webp" alt="Project Preview" class="project__preview" type="image/webp" loading="lazy" width="316px" height="210px">
                 <div class="text__container">
                     <h3 class="title">Awesome Image</h3>
                     <p class="type">Photography</p>
                 </div>
             </li>
             <li>
-                <img src="assets/images/shuffle-03.jpg" alt="Project Preview" class="project__preview">
+                <img src="assets/images/shuffle-03.webp" alt="Project Preview" class="project__preview" type="image/webp" loading="lazy" width="316px" height="210px">
                 <div class="text__container">
                     <h3 class="title">Awesome Image</h3>
                     <p class="type">Web</p>
                 </div>
             </li>
             <li>
-                <img src="assets/images/shuffle-04.jpg" alt="Project Preview" class="project__preview">
+                <img src="assets/images/shuffle-04.webp" alt="Project Preview" class="project__preview" type="image/webp" loading="lazy" width="316px" height="210px">
                 <div class="text__container">
                     <h3 class="title">Awesome Image</h3>
                     <p class="type">Print</p>
                 </div>
             </li>
             <li>
-                <img src="assets/images/shuffle-05.jpg" alt="Project Preview" class="project__preview">
+                <img src="assets/images/shuffle-05.webp" alt="Project Preview" class="project__preview" type="image/webp" loading="lazy" width="316px" height="210px">
                 <div class="text__container">
                     <h3 class="title">Awesome Image</h3>
                     <p class="type">Print</p>
                 </div>
             </li>
             <li>
-                <img src="assets/images/shuffle-06.jpg" alt="Project Preview" class="project__preview">
+                <img src="assets/images/shuffle-06.webp" alt="Project Preview" class="project__preview" type="image/webp" loading="lazy" width="316px" height="210px">
                 <div class="text__container">
                     <h3 class="title">Awesome Image</h3>
                     <p class="type">Web</p>
                 </div>
             </li>
             <li>
-                <img src="assets/images/shuffle-07.jpg" alt="Project Preview" class="project__preview">
+                <img src="assets/images/shuffle-07.webp" alt="Project Preview" class="project__preview" type="image/webp" loading="lazy" width="316px" height="210px">
                 <div class="text__container">
                     <h3 class="title">Awesome Image</h3>
                     <p class="type">Photography</p>
                 </div>
             </li>
             <li>
-                <img src="assets/images/shuffle-08.jpg" alt="Project Preview" class="project__preview">
+                <img src="assets/images/shuffle-08.webp" alt="Project Preview" class="project__preview" type="image/webp" loading="lazy" width="316px" height="210px">
                 <div class="text__container">
                     <h3 class="title">Awesome Image</h3>
                     <p class="type">App</p>
@@ -217,7 +263,7 @@
     <!-- Video Section -->
     <section id="video">
         <div class="overlay"></div>
-        <video src="assets/videos/awesome-video.mp4" type="video/mp4" autoplay loop muted></video>
+        <video src="assets/videos/awesome-video.mp4" type="video/mp4" preload="none" autoplay loop muted></video>
         <div class="text__container">
             <h3>Super Awesome Video Here</h3>
             <p>It's all you need</p>
@@ -235,7 +281,7 @@
             </p>
         </div>
         <!-- Main Image -->
-        <img src="assets/images/about.png" alt="Tablets Image">
+        <img src="assets/images/about.webp" alt="Tablets Image" type="image/webp" loading="lazy" width="739px" height="376px">
     </section>
     <!-- Statistics Section -->
     <section id="statistics">
@@ -276,14 +322,14 @@
                 <!-- Testimonials List Container -->
                 <ul class="quotes__container">
                     <li>
-                        <img src="assets/images/skills-01.jpg" alt="Person Avatar" title="Avatar Image">
+                        <img src="assets/images/skills-01.webp" alt="Person Avatar" title="Avatar Image" type="image/webp" loading="lazy" width="100px" height="100px">
                         <div class="text__container">
                             <p class="quote">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
                             <h4 class="job__title">John Doe, CEO</h4>
                         </div>
                     </li>
                     <li>
-                        <img src="assets/images/skills-02.jpg" alt="Person Avatar" title="Avatar Image">
+                        <img src="assets/images/skills-02.webp" alt="Person Avatar" title="Avatar Image" type="image/webp" loading="lazy" width="100px" height="100px">
                         <div class="text__container">
                             <p class="quote">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
                             <h4 class="job__title">John Doe, CEO</h4>
@@ -461,12 +507,12 @@
             <!-- Contact Info Container -->
             <div class="contact__info">
                 <div class="text__container">
-                    <h4 class="title">Get in touch</h4>
+                    <h3 class="title">Get in touch</h3>
                     <div>+00 123.456.789</div>
                     <div>+00 123.456.789</div>
                 </div>
                 <div class="text__container">
-                    <h4 class="title">Where we are</h4>
+                    <h3 class="title">Where we are</h3>
                     <div>Awesome Address 17 <br> New York, NYC <br> 123-4567-890 <br> USA</div>
                 </div>
 
@@ -479,7 +525,7 @@
         <!-- Main Content -->
         <div class="container">
             <!-- Company Logo Image -->
-            <img src="assets/images/logo.png" alt="Company Logo">
+            <img src="assets/images/logo.webp" alt="Company Logo" type="image/webp" loading="lazy" width="112px" height="36px">
             <!-- Main Title -->
             <h4>We Are Social</h4>
             <!-- Social Media Accounts Container -->
