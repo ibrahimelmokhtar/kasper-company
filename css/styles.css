@@ -659,7 +659,8 @@ header .menu__icon:hover { color: var(--main-color); cursor: pointer; }
     left: 0;
     background-color: var(--main-color);
     height: 100%;
-    width: 100%;
+    width: 0;
+    transition: width calc(2 * var(--transition-duration));
 }
 /* Progress Percentage Container */
 #our__skills .progress__bar::before {
