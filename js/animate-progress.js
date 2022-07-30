@@ -2,11 +2,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Obtain Desired Elements From The DOM:
     const skillsSection = document.querySelector('#our__skills');
-    const progressBars = document.querySelectorAll('.progress__bar');
+    const progressBars = document.querySelectorAll('#our__skills .progress__bar');
+    // Did The Increment Started Or Not?
+    let isStarted = false;
     // Scrolling Behavior:
-    window.onscroll = () => {
-        if (skillsSection.getBoundingClientRect().top <= 200) {
+    window.addEventListener('scroll', () => {
+        if (!isStarted && skillsSection.getBoundingClientRect().top <= 200) {
             progressBars.forEach((progressBar) => { progressBar.style.width = progressBar.dataset.progress; });
         }
-    };
+    });
 });
