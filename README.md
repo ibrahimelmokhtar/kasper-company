@@ -33,6 +33,7 @@
 - 🤖 Responsive layout on ALL devices
 - ⚡ Fast and lightweight website; based on Lighthouse report
 - 🖼️ Landing image slider
+- 🔀 Portfolio projects shuffle filter
 - 📈 Numbers increment on scrolling
 - 📊 Progress bars animation on scrolling
 - 🌱 Smooth scrolling behavior
