@@ -8,20 +8,8 @@
 
 ## Design Previews
 
-<table>
-  <tr>
-    <th>Desktop Preview</th>
-    <th>Mobile Preview</th>
-  </tr>
-  <tr>
-    <td>
-      <img src=".github/preview-desktop.png" alt="Desktop Website Preview">
-    </td>
-    <td>
-      <img src=".github/preview-mobile.png" alt="Desktop Website Preview">
-    </td>
-  </tr>
-</table>
+| [🖥️ Desktop Preview](.github/preview-desktop.png) | [📱 Mobile Preview](.github/preview-mobile.png) |
+| -------------------------------------------------- | ----------------------------------------------- |
 
 ## Lighthouse Results
 
@@ -33,6 +21,7 @@
 - 🤖 Responsive layout on ALL devices
 - ⚡ Fast and lightweight website; based on Lighthouse report
 - 🖼️ Landing image slider
+- 🔀 Portfolio projects shuffle filter
 - 📈 Numbers increment on scrolling
 - 📊 Progress bars animation on scrolling
 - 🌱 Smooth scrolling behavior

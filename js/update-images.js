@@ -1,5 +1,10 @@
 // Entry Point:
 document.addEventListener('DOMContentLoaded', () => {
+    // Global Variables:
+    let currentIndex = 2;
+    let touchStartX = 0;
+    let touchEndX = 0;
+
     // Obtain Desired Elements From The DOM:
     const landingSection = document.querySelector('#landing');
     const prevArrow = document.querySelector('#landing .left__arrow');
@@ -63,7 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Initial Setup:
-    let currentIndex = 2;
     updateUI(currentIndex);
 
     // Decrease Image Index:
@@ -81,10 +85,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Handle touch events for mobile devices:
-    let touchStartX = 0;
-    let touchEndX = 0;
-    document.addEventListener('touchstart', (event) => { touchStartX = event.changedTouches[0].screenX; });
-    document.addEventListener('touchend', (event) => {
+    landingSection.addEventListener('touchstart', (event) => { touchStartX = event.changedTouches[0].screenX; });
+    landingSection.addEventListener('touchend', (event) => {
         touchEndX = event.changedTouches[0].screenX;
         checkDirection();
     });
