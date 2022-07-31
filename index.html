@@ -108,13 +108,13 @@
             </div>
         </div>
         <!-- Background Changing Arrows -->
-        <i class="fa-solid fa-angle-left left__arrow"></i>
-        <i class="fa-solid fa-angle-right right__arrow"></i>
+        <i class="fa-solid fa-angle-left left__arrow" title="Previous Image"></i>
+        <i class="fa-solid fa-angle-right right__arrow" title="Next Image"></i>
         <!-- Dotted Indicators -->
         <ul>
-            <li></li>
-            <li class="active"></li>
-            <li></li>
+            <li title="First Image" data-index="1"></li>
+            <li title="Second Image" data-index="2" class="active"></li>
+            <li title="Third Image" data-index="3"></li>
         </ul>
     </section>
     <!-- Services Section -->
@@ -542,5 +542,6 @@
     <!-- Used JS Scripts -->
     <script src="js/increase-numbers.js" defer></script>
     <script src="js/animate-progress.js" defer></script>
+    <script src="js/update-images.js" defer></script>
 </body>
 </html>

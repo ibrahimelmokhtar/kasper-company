@@ -170,7 +170,7 @@ header .menu__icon:hover { color: var(--main-color); cursor: pointer; }
 #landing {
     min-height: 100vh;
     background-color: var(--background-color);
-    background-image: url('../assets/images/landing.webp');
+    background-image: url('../assets/images/landing-2.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

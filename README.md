@@ -32,6 +32,7 @@
 - ⭐ Single Page Website
 - 🤖 Responsive layout on ALL devices
 - ⚡ Fast and lightweight website; based on Lighthouse report
+- 🖼️ Landing image slider
 - 📈 Numbers increment on scrolling
 - 📊 Progress bars animation on scrolling
 - 🌱 Smooth scrolling behavior
@@ -46,6 +47,9 @@
     </td>
     <td>
       <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" width="100" height="100">
+    </td>
+    <td>
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="100" height="100">
     </td>
     <td>
       <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" width="100" height="100">
